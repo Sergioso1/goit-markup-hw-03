@@ -25,9 +25,10 @@ ul {
   --button-color: #4d5ae5;
 }
 .conteiner {
-  width: 1158px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 body {
   color: var(--regular-color);
@@ -78,7 +79,7 @@ body {
   text-transform: uppercase;
 }
 .footer-logo {
- margin-bottom: 16px;
+  margin-bottom: 16px;
 
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -91,23 +92,24 @@ body {
 
 /* header */
 .header {
-
   border-bottom: 1px solid #e7e9fc;
-
+}
+.header-conteiner {
+  justify-content: space-between;
 }
 .header-list {
-display: flex;
+  display: flex;
 
   font-size: 16px;
   line-height: 1.5;
 }
-.navigation{
-  display: flex
-}
-.header-conteiner{
+.navigation {
   display: flex;
 }
-.header-item:not(:last-child){
+.header-conteiner {
+  display: flex;
+}
+.header-item:not(:last-child) {
   margin-right: 40px;
 }
 .header-item {
@@ -123,18 +125,20 @@ display: flex;
   letter-spacing: 0.02em;
   font-style: normal;
 }
-.address-links{
+.address-links {
   padding-top: 24px;
   padding-bottom: 24px;
-
+}
+.address-links:not(:last-child) {
+  margin-right: 40px;
 }
 .address-item {
   color: var(--regular-color);
   letter-spacing: 0.02em;
 }
 .address-list {
-display: flex;
-justify-self: flex-end;
+  display: flex;
+  justify-self: flex-end;
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: 0.02em;
@@ -159,9 +163,9 @@ justify-self: flex-end;
 }
 
 .hero-title {
-padding-top: 191px;
-padding-right: 472;
-padding-left: 472;
+  padding-top: 191px;
+  padding-right: 472;
+  padding-left: 472;
   margin-top: 0;
   margin-bottom: 48px;
   color: var(--hero-color);
@@ -199,8 +203,10 @@ padding-left: 472;
   margin-bottom: 120px;
 }
 .description-list {
+  width: 1128px;
+  height: 104px;
   display: flex;
-padding: 0px;
+  padding: 0px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -211,10 +217,10 @@ padding: 0px;
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
-.description-item{
-  width: calc((100%-72)/4);
+.description-item {
+  width: calc((100%-72) / 4);
 }
-.description-item:not(:last-child){
+.description-item:not(:last-child) {
   margin-right: 24px;
 }
 .example-title {
@@ -245,19 +251,19 @@ padding: 0px;
   text-transform: capitalize;
   color: var(--second-color);
 }
-.works-list{
+.works-list {
   display: flex;
   padding: 0;
 }
-.example-works{
-  width: calc((100%-48)/3);
+.example-works {
+  width: calc((100%-48) / 3);
 }
 /* team */
 .team-img {
   margin-top: 0;
   margin-bottom: 32px;
 }
-.team-list{
+.team-list {
   display: flex;
   padding: 0;
 }
@@ -288,14 +294,14 @@ padding: 0px;
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
-.team-item{
-text-align: center;
+.team-item {
+  text-align: center;
 }
 .team-item:not(:last-child) {
   margin-right: 24px;
   border-radius: 0px 0px 4px 4px;
   width: 264px;
-height: 380px;
+  height: 380px;
 
   color: var(--regular-color);
   background-color: #ffffff;
@@ -305,18 +311,17 @@ footer {
   height: 312px;
   background-color: var(--second-color);
 }
-.footer-box{
+.footer-box {
   padding-top: 100px;
   width: 264px;
   height: 112px;
   left: 156px;
-
 }
 .footer-text {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--footer-color);
-  
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -336,19 +341,20 @@ footer {
   letter-spacing: 0.02em;
 }
 .aps-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
-.bottom-list{
+.bottom-list {
   display: flex;
   margin-top: 96px;
   justify-content: center;
   padding: 0;
 }
-.bottom-item:not(:last-child){
+.bottom-item:not(:last-child) {
   margin-right: 24px;
 }
 .portfolio-button:not(:last-child) {
@@ -379,19 +385,33 @@ footer {
   background-color: #404bbf;
 }
 /* APPS */
-.aps-list{
+.aps-list {
+  margin-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-
+ width: 1128;
   margin-top: 72px;
 }
-.aps-item{
-  width: calc((100%-48)/3);
+.aps-item {
+padding: 32px,0;
+  width: calc((100%-48) / 3);
   padding: 0;
   font-size: 0px;
   width: 360px;
+height: 420px;
 }
-.aps-item:not(:nth-child(3n)){
-margin-right: 24px;
+.aps-item:nth-child(-n+6){
+margin-bottom: 48px;
+}
+.aps-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+.aps-item{
+  margin-bottom: 48;
+}
+.apps-box{
+  padding-bottom: 32px;
+  padding-top: 32px;
+  padding-left: 16px;
 }
