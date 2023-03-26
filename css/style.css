@@ -155,7 +155,6 @@ body {
 /* hero */
 .hero {
   margin-bottom: 123px;
-  outline: solid tomato;
   height: 600px;
   text-align: center;
 
@@ -199,7 +198,6 @@ body {
 }
 /* description */
 .description {
-  outline: solid tomato;
   margin-bottom: 120px;
 }
 .description-list {
@@ -235,7 +233,6 @@ body {
 }
 /* works */
 .works {
-  outline: solid tomato;
   margin-bottom: 120px;
 }
 .title-work {
@@ -280,7 +277,6 @@ body {
   color: var(--second-color);
 }
 .team {
-  outline: solid tomato;
   background-color: #f4f4fd;
 }
 
