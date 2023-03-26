@@ -386,27 +386,27 @@ footer {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
- width: 1128;
+  width: 1128;
   margin-top: 72px;
 }
 .aps-item {
-padding: 32px,0;
+  padding: 32px, 0;
   width: calc((100%-48) / 3);
   padding: 0;
   font-size: 0px;
   width: 360px;
-height: 420px;
+  height: 420px;
 }
-.aps-item:nth-child(-n+6){
-margin-bottom: 48px;
+.aps-item:nth-child(-n + 6) {
+  margin-bottom: 48px;
 }
 .aps-item:not(:nth-child(3n)) {
   margin-right: 24px;
 }
-.aps-item{
+.aps-item {
   margin-bottom: 48;
 }
-.apps-box{
+.apps-box {
   padding-bottom: 32px;
   padding-top: 32px;
   padding-left: 16px;
