@@ -68,6 +68,7 @@ body {
 }
 
 .header-logo {
+  margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
   font-family: Raleway, sans-serif;
@@ -80,6 +81,7 @@ body {
 }
 .footer-logo {
   margin-bottom: 16px;
+  display: block;
 
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -99,7 +101,8 @@ body {
 }
 .header-list {
   display: flex;
-
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -109,14 +112,17 @@ body {
 .header-conteiner {
   display: flex;
 }
+.header-link {
+  color: var(--second-color);
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .header-item:not(:last-child) {
   margin-right: 40px;
 }
 .header-item {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  color: var(--second-color);
   letter-spacing: 0.02em;
 }
 
@@ -154,17 +160,17 @@ body {
 
 /* hero */
 .hero {
-  margin-bottom: 123px;
-  height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
   text-align: center;
 
   background-color: #2e2f42;
 }
 
 .hero-title {
-  padding-top: 191px;
-  padding-right: 472;
-  padding-left: 472;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 48px;
   color: var(--hero-color);
@@ -198,11 +204,12 @@ body {
 }
 /* description */
 .description {
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .description-list {
   width: 1128px;
-  height: 104px;
+
   display: flex;
   padding: 0px;
   margin-top: 0;
@@ -233,11 +240,11 @@ body {
 }
 /* works */
 .works {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .title-work {
   margin-top: 0;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
   text-align: center;
 
   font-weight: 700;
@@ -252,17 +259,27 @@ body {
   display: flex;
   padding: 0;
 }
+.works-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .example-works {
   width: calc((100%-48) / 3);
 }
 /* team */
 .team-img {
   margin-top: 0;
-  margin-bottom: 32px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .team-list {
   display: flex;
   padding: 0;
+}
+.team-box {
+  padding: 32px 16px;
 }
 
 .team-title {
@@ -278,6 +295,8 @@ body {
 }
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .name-title {
@@ -292,38 +311,40 @@ body {
 }
 .team-item {
   text-align: center;
+  color: var(--regular-color);
+  background-color: #ffffff;
 }
 .team-item:not(:last-child) {
   margin-right: 24px;
   border-radius: 0px 0px 4px 4px;
   width: 264px;
-  height: 380px;
-
-  color: var(--regular-color);
-  background-color: #ffffff;
 }
 /* footer */
 footer {
+  padding: 120 0;
   height: 312px;
   background-color: var(--second-color);
-}
-.footer-box {
-  padding-top: 100px;
-  width: 264px;
-  height: 112px;
-  left: 156px;
 }
 .footer-text {
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--footer-color);
+  width: 264px;
 
-  font-weight: 400;
+  color: var(--footer-color);
+font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.footer-box{
+  left: 156px;
+  padding-top: 100px;
+}
 /* portfolio */
+.portfolio-main{
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 /* body */
 .portfolio-body {
   color: var(--regular-color);
@@ -346,7 +367,6 @@ footer {
 }
 .bottom-list {
   display: flex;
-  margin-top: 96px;
   justify-content: center;
   padding: 0;
 }
@@ -382,20 +402,23 @@ footer {
 }
 /* APPS */
 .aps-list {
-  margin-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  width: 1128;
-  margin-top: 72px;
+  padding-top: 72px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+.aps-img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .aps-item {
   padding: 32px, 0;
   width: calc((100%-48) / 3);
-  padding: 0;
-  font-size: 0px;
+  padding-top:  32px;
   width: 360px;
-  height: 420px;
 }
 .aps-item:nth-child(-n + 6) {
   margin-bottom: 48px;
@@ -403,10 +426,10 @@ footer {
 .aps-item:not(:nth-child(3n)) {
   margin-right: 24px;
 }
-.aps-item {
-  margin-bottom: 48;
-}
 .apps-box {
+  border-right: 1px solid #E7E9FC;
+  border-left: 1px solid #E7E9FC;
+  border-bottom: 1px solid #E7E9FC;
   padding-bottom: 32px;
   padding-top: 32px;
   padding-left: 16px;
